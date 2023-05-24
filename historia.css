@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: "Montserrat", Sans-serif;
+	margin: 0;
+}
+
+
+.menu_geral {
+	/* max-width: 960px; */
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+	font-size: 18px;
+	font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: uppercase;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.navbar{
+    /* padding-top: 8vh; */
+    list-style: none;
+    position: absolute;
+    top: 12.7vh;
+    left: 0vw;
+    height: 67vh;
+    width: 20vw;
+    background-color: white;
+    transition: 200ms;
+    cursor: pointer;
+}
+hr#hrlista{
+    background-color: white;
+    opacity: 40%;
+    height: 0.1px;
+    border: none;
+}
+
+.navbar_ativo{
+    left: -200vw;
+    transition: 200ms;
+    
+}
+
+header {
+	background-image: url("assets/img/Composição_site/surfnav.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 35vh;
+	color: #fff;
+	padding: 1% 0;
+	margin: 0;
+}
+hr#hrnav{
+    background-color: white;
+    opacity: 40%;
+    width: 95%;
+    height: 0.1px;
+    display: flex;
+    border: none;
+    margin-top: 2vh;
+    justify-content: center;
+}
+h1#h1nav{
+    color: white;
+    margin-top: 6vh;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h1#h1histcplt{
+    font-family: "Montserrat", sans-serif ;
+    position: absolute;
+    margin-top: -52vh;
+    margin-left: 50vw;
+    
+}
+p#phistcplt{
+    font-family: "Montserrat", sans-serif ;
+    position: absolute;
+    margin-top: -44.1vh;
+    margin-left: 50vw;
+}
+
+.logo {
+	margin-left: 13.5%;
+    
+}
+
+img#imghis{
+    width: 36%;
+    margin-top: 15vh;
+    margin-left: 13vw;
+}
+.btn-menu{
+    margin-right: 8vw;
+    background-color: transparent;
+    color: white;
+    border: solid 1px transparent;
+	margin-left: 2%;
+	align-items: center;
+    cursor: pointer;
+	
+}
+.btn-menu:hover{
+	color: beige;
+}
+
+ul.lista {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+ul.lista a{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+ul.menu_nav{
+    margin-top: 6%;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin: 0 20px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+}
+nav a:hover {
+	color: beige;
+    font-weight: 500;
+    text-decoration-color: beige;
+    text-decoration-thickness: 0.2px;
+}
+
+sup{
+    color: #5A5A5A;
+    font-weight: 300;
+}
+sup:hover{
+    text-decoration: underline;
+    font-weight: 400;
+    color: #4d4d4d;
+}
+
+/* --------------------------------------SLIDES HISTORIA----------------- */
+
+ #slidehis{
+    background-image: url("assets/img/Composição_site/skatecrt.psd");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+ }
+ h1#elevate{
+    color: beige;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 108px;
+    font-weight: 500;
+ }
+ h1#evolve{
+    color: rgb(162, 162, 159);
+   font-family: 'Segoe UI';
+   text-transform: uppercase;
+   font-size: 2.2rem;
+   font-weight: 600;
+   margin-left: 108px;
+   margin-top: -15px;
+   font-weight: 500;
+ }
+ h1#express{
+   color: white;
+   font-family: 'Segoe UI';
+   text-transform: uppercase;
+   margin-top: -17px;
+   margin-left: 108px;
+   font-size: 2.7rem;
+   font-weight: 700;
+
+ }
+
+ #slidehis p{
+    color: white;
+    font-family: 'Segoe UI';
+    margin-left: 108px;
+    margin-top: 3px;
+    font-size: 17px;
+    font-weight: 350;
+    text-decoration: none;
+ }
+
+ #slidehis a{
+    margin-top: 400px;
+    text-decoration: none;
+ }
+ button#btn_his{
+    margin-left: 108px;
+    margin-top: 28px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif ;
+    font-size: 18px;
+    height: 6vh;
+    width: 14vw;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+ }
+ button#btn_his:hover{
+    transform: translateX(15px);
+
+ }
+ /* --------------------------------------SLIDES HISTORIA----------------- */
+
+
+/*-------------------------------camisetas venda */
+
+.vendaprods{
+    display: flex;
+    justify-content: center;
+}
+
+ #camiseta222 img {
+	max-width: 100%;
+    align-items: center;
+}
+
+#camiseta222 {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	width: 300px;
+	text-align: center;
+}
+
+#camiseta222 img {
+	max-width: 100%;
+    border: none;
+    border-radius: 20px;
+}
+#camiseta222 img:hover {
+    opacity: 90%;
+}
+
+#camiseta222 h2 {
+    font-family: "Montserrat", sans-serif ;
+	font-size: 20px;
+    font-weight:700;
+	margin-top: 5px;
+}
+
+#camiseta222 p {
+	font-size: 18px;
+	margin-top: -1px;
+}
+
+
+/*--------------------------------------camisetas venda */
+
+/*----------------------------------- rodape */
+
+footer {
+    background-color: #eae9e9;
+	color: #fff;
+	padding: 13% 0;
+}
+
+img#logordp{
+    position: absolute;
+    margin-left: 7vw;
+    margin-top: -26vh;
+    height: 25vh;
+}
+p#plogo{
+    color: #696969;
+    position: absolute;
+    margin-left: 20.3vw;
+    margin-top: -17.5vh;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+h1#h1logo{
+    position: absolute;
+    margin-left: 20.3vw;
+    margin-top: -15vh;
+    font-size: 1.7rem;
+    color: #696969;
+    font-weight: 700;
+    font-family: "Montserrat", Sans-serif;
+    text-transform: uppercase;
+}
+h2#h2logo{
+    position: absolute;
+    margin-left: 20.3vw;
+    margin-top: -13.9vh;
+    color: #696969;
+    font-weight: 300;
+    font-family: "Montserrat", Sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+img#icntelef{
+    position: absolute;
+    margin-left: 9.8vw;
+    margin-top: 5.5vh;
+    height: 7.5vh;
+}
+h1#h1telef{
+    position: absolute;
+    margin-left: 15.3vw;
+    margin-top: 7vh;
+    font-size: 1.2rem;
+    color: #696969;
+    font-weight: 600;
+    font-family: "Montserrat", Sans-serif;
+}
+h2#h2telef{
+    position: absolute;
+    margin-left: 15.3vw;
+    margin-top: 10.8vh;
+    font-size: 0.9rem;
+    color: #696969;
+    font-family: "Montserrat", Sans-serif;
+}
+
+img#icnwpp{
+    position: absolute;
+    height: 7.5vh;
+    margin-top: 5.5vh;
+    margin-left: 40vw;
+}
+h1#h1wpp{
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: 7vh;
+    font-size: 1.2rem;
+    color: #696969;
+    font-weight: 600;
+    font-family: "Montserrat", Sans-serif;
+}
+h2#h2wpp{
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: 10.8vh;
+    font-size: 0.9rem;
+    color: #696969;
+    font-family: "Montserrat", Sans-serif;
+}
+
+img#icnemail{
+    position: absolute;
+    height: 8.5vh;
+    margin-top: 5.5vh;
+    margin-left: 70vw;
+}
+h1#h1email{
+    position: absolute;
+    margin-left: 75.5vw;
+    margin-top: 6.7vh;
+    font-size: 1.2rem;
+    color:#696969;
+    font-weight: 600;
+    font-family: "Montserrat", Sans-serif;
+}
+h2#h2email{
+    position: absolute;
+    margin-left: 75.5vw;
+    margin-top: 10.4vh;
+    font-size: 0.9rem;
+    color: #696969;
+    font-family: "Montserrat", Sans-serif;
+}
+
+img#icninsta{
+    position: absolute;
+    height: 7.2vh;
+    margin-top: -6vh;
+    margin-left: 70vw;
+}
+img#icninsta:hover{
+    opacity: 85%;
+    cursor: pointer;
+}
+img#icnfb{
+    position: absolute;
+    height: 7.2vh;
+    margin-top: -6vh;
+    margin-left: 74vw;
+}
+img#icnfb:hover{
+    opacity: 85%;
+    cursor: pointer;
+}
+img#icnyt{
+    position: absolute;
+    height: 7.2vh;
+    margin-top: -6vh;
+    margin-left: 78vw;
+}
+img#icnyt:hover{
+    opacity: 85%;
+    cursor: pointer;
+}
+h1#h1icns{
+    position: absolute;
+    margin-left: 70.5vw;
+    margin-top: -24vh;
+    font-size: 1.3rem;
+    color:#696969;
+    font-weight: 600;
+    font-family: "Montserrat", Sans-serif;
+}
+h2#h2icns{
+    position: absolute;
+    margin-left: 70.5vw;
+    margin-top: -17vh;
+    font-size: 1rem;
+    color: #696969;
+    font-family: "Montserrat", Sans-serif;
+}
+p#plink{
+    position: absolute;
+    margin-top: -24vh;
+    margin-left: 40vw;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #696969;
+    font-family: "Montserrat", Sans-serif;
+}
+
+a#plki{
+    position: absolute;
+    margin-top: -20vh;
+    margin-left: 40vw;
+    text-decoration: none;
+    color: #696969;
+    font-family: "Montserrat", Sans-serif;
+}
+a#plkh{
+    position: absolute;
+    margin-top: -19vh;
+    margin-left: 40vw;
+    text-decoration: none;
+    color: #696969;
+    font-family: "Montserrat", Sans-serif;
+}
+a#plkc{
+    position: absolute;
+    margin-top: -18vh;
+    margin-left: 40vw;
+    text-decoration: none;
+    color: #696969;
+    font-family: "Montserrat", Sans-serif;
+}
+
+h1#h1pfin{
+    position: absolute;
+    margin-left: 37vw;
+    margin-top: 20vh;
+    font-size: 1rem;
+    color: #696969;
+}
+h2#h2pfin{
+    position: absolute;
+    margin-left: 42.5vw;
+    margin-top: 20vh;
+    font-size: 1rem;
+    color: #919090;
+}
+/*----------------------------------- rodape */
+hr{
+    opacity: 20%;
+}
+hr#hrrdp{
+    position: absolute;
+    margin-left: 19.4vw;
+    margin-top: -21vh;
+    opacity: 100%;
+    height: 120px;
+    width: 1.8px;
+    background-color: rgba(128, 128, 128, 0.81) ;
+    border: none;
+}
+div#pdireitos{
+    position: absolute;
+    margin-left: 39vw;
+    margin-top: 23vh;
+    font-size: 0.7rem;
+    color: #696969;
+}
+#adir{
+color: black;
+}
+#flaticon{
+    color: black;
+}
+
+/* #696969  COR ICN FOOTER  */
+/* #5A5A5A COR ICN CHAMADA  */
