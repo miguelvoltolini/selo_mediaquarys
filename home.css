@@ -31,6 +31,7 @@ body {
     top: 12.5vh;
     left: 0vw;
     height: 67vh;
+    width: 17vw;
     background-color: white;
     transition: 200ms;
     cursor: pointer;
@@ -60,6 +61,7 @@ body {
   }
   
   header {
+
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center center;
@@ -72,8 +74,7 @@ body {
   }
 
 .logo {
-	margin-left: 11.5%;
-    
+	margin-left: -60%;
 }
 
 .btn-menu{
@@ -120,12 +121,10 @@ nav a {
 	font-size: 18px;
 }
 
-/* nav a:hover {
-	color: rgb(95, 189, 95);
-    text-decoration: underline;
-    text-decoration-color: rgb(95, 189, 95);;
+nav a:hover {
+	color: rgb(167, 248, 167);
     text-decoration-thickness: 0.1px;
-} */
+}
 
 sup{
     color: #5A5A5A;
@@ -190,26 +189,48 @@ p {
   }
 /*======================================================== CHAMADA CARDS ========*/
 
-
-.botao-imagem img {
-    background-color: transparent;
-    margin-left: 2%; 
-    width: 30%; 
-    border-radius: 15px;
-    
-  }
-.botao-imagem img:hover {
-    opacity: 80%;
+.botao-imagem {
+  display: flex;
+  justify-content: space-between;
 }
 
-/*========================================================  para botar texto com hover nas imagens botoes
-/* .botao-imagem p{
-    position: relative;
-    margin-left: 12vw;
-    margin-top: -50vh;
-    color: transparent;
-} */
+.hover-darken {
+  position: relative;
+  overflow: hidden;
+}
 
+.image-container {
+  position: relative;
+}
+
+.botao-imagem img {
+  margin-left: 5%;
+  width: 90%;
+  border-radius: 15px;
+  filter: saturate(0%); /*altera saturação */
+  transition: filter 0.3s ease; /*coloca transição pro filtro*/
+}
+
+.botao-imagem .hover-darken:hover img {
+  filter: saturate(100%);
+}
+
+.image-text {
+  position: absolute;
+  font-size: 1.7rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+
+.image-text:hover{
+  opacity: 1;
+}
 
 /*============================================== SLIDE HISTORIA =============*/
  #slidehis{
@@ -278,7 +299,7 @@ p {
   }
   
   #camiseta222 img:hover {
-    opacity: 90%;
+    filter: brightness(80%); /*altera brilho */
   }
   
   #camiseta222 h2 {
@@ -574,8 +595,9 @@ header {
     .navbar_ativo {
         display: block;
         left: 0;
-        height: 100%;
-        background-color: black;
+        height: 70%;
+        width: auto;
+        background-color: rgb(255, 255, 255);
     }
 
     .btn-menu {
