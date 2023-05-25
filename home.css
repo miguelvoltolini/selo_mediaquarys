@@ -18,7 +18,7 @@ body {
     text-decoration: none;
 	font-size: 14px;
 	font-family: "Montserrat", Sans-serif;
-    font-weight: 200;
+    font-weight: 00;
     text-transform: uppercase;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -31,7 +31,7 @@ body {
     top: 12.5vh;
     left: 0vw;
     height: 67vh;
-    background-color: black;
+    background-color: white;
     transition: 200ms;
     cursor: pointer;
 }
@@ -41,13 +41,35 @@ body {
     transition: 200ms;
     
 }
-
-header {
-	background-color: black;
-	color: #fff;
-	padding: 1% 0;
-	margin: 0;
-}
+@keyframes alternarImagem {
+    0% {
+      background-image: url("assets/img/Composição_site/img_ceu.jpg");
+    }
+    25% {
+      background-image: url("assets/img/Composição_site/ias.jpg");
+    }
+    50% {
+      background-image: url("assets/img/Composição_site/img_ceu.jpg");
+    }
+    75% {
+      background-image: url("assets/img/Composição_site/ias.jpg");
+    }
+    100% {
+      background-image: url("assets/img/Composição_site/img_ceu.jpg");
+    }
+  }
+  
+  header {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 110vh;
+    color: #fff;
+    padding: 1% 0;
+    margin: 0;
+    animation: alternarImagem 25s infinite;
+  }
 
 .logo {
 	margin-left: 11.5%;
@@ -65,7 +87,7 @@ header {
 	
 }
 .btn-menu:hover{
-	color: beige;
+    color: rgb(95, 189, 95);
 }
 
 ul.lista {
@@ -98,13 +120,23 @@ nav a {
 	font-size: 18px;
 }
 
-nav a:hover {
-	color: beige;
+/* nav a:hover {
+	color: rgb(95, 189, 95);
     text-decoration: underline;
-    text-decoration-color: beige;
-    text-decoration-thickness: 0.2px;
-}
+    text-decoration-color: rgb(95, 189, 95);;
+    text-decoration-thickness: 0.1px;
+} */
 
+sup{
+    color: #5A5A5A;
+}
+sup:hover{
+    color: rgb(95, 189, 95);
+    text-decoration: underline;
+    font-weight: 500;
+    text-decoration-color: rgb(95, 189, 95);;
+    text-decoration-thickness: 0.1px;
+}
 
 .slide img{
 	margin: 0;
@@ -226,46 +258,41 @@ p {
 /*=============================================== SLIDE HISTORIA =============*/
 
 /*======================================================== camisetas venda */
-
-.vendaprods{
+.vendaprods {
     display: flex;
     justify-content: center;
-}
-
- #camiseta222 img {
-	max-width: 100%;
-    align-items: center;
-}
-
-#camiseta222 {
-	display: inline-block;
-	margin: 10px;
-	padding: 10px;
-	width: 300px;
-	text-align: center;
-}
-
-#camiseta222 img {
-	max-width: 100%;
+  }
+  
+  #camiseta222 {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  #camiseta222 img {
+    max-width: 100%;
     border: none;
     border-radius: 20px;
-}
-#camiseta222 img:hover {
+  }
+  
+  #camiseta222 img:hover {
     opacity: 90%;
-}
-
-#camiseta222 h2 {
-    font-family: "Montserrat", sans-serif ;
-	font-size: 20px;
-    font-weight:700;
-	margin-top: 5px;
-}
-
-#camiseta222 p {
-	font-size: 18px;
+  }
+  
+  #camiseta222 h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  
+  #camiseta222 p {
+    font-size: 18px;
     font-weight: 300;
-	margin-top: -1px;
-}
+    margin-top: -1px;
+  }
 
 
 /*======================================================== camisetas venda */
@@ -284,6 +311,18 @@ img#logordp{
     margin-top: -26vh;
     height: 25vh;
 }
+
+hr#hrrdp{
+    position: absolute;
+    margin-left: 19.4vw;
+    margin-top: -21vh;
+    opacity: 100%;
+    height: 120px;
+    width: 1.8px;
+    background-color: rgba(128, 128, 128, 0.81) ;
+    border: none;
+}
+
 p#plogo{
     color: #696969;
     position: absolute;
@@ -486,16 +525,6 @@ h2#h2pfin{
     color: #919090;
 }
 
-hr#hrrdp{
-    position: absolute;
-    margin-left: 19.4vw;
-    margin-top: -21vh;
-    opacity: 100%;
-    height: 120px;
-    width: 1.8px;
-    background-color: rgba(128, 128, 128, 0.81) ;
-    border: none;
-}
 div#pdireitos{
     font-family: "Montserrat", Sans-serif;
     position: absolute;
@@ -523,6 +552,13 @@ hr{
         width: 100%;
     }
 /*=========================== MENU ====================*/
+
+header {
+	background-color: transparent;
+	color: #fff;
+	padding: 1% 0;
+	margin: 0;
+}
     .menu_geral {
         flex-direction: column;
         align-items: center;
@@ -647,6 +683,188 @@ hr{
         font-weight: 600;
     }
 /*=========================== SLIDE ====================*/
+/*=========================== CAMISAS VENDAS ====================*/
+
+    .vendaprods {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      #camiseta222 img{
+        border-radius: 13px;
+      }
+    
+      #camiseta222 {
+        width: calc(92%);
+        margin: 5%;
+        padding: 0;
+      }
+
+      #camiseta222 h2{
+        font-size: 80%;
+      }
+
+      #camiseta222 p{
+        font-size: 100%;
+      }
+
+/*=========================== CAMISAS VENDAS ====================*/
+/*=========================== RODAPE ====================*/
+footer {
+    padding: 127% 0;
+  }
+
+  img#logordp {
+    margin-left: 15%;
+    margin-top: -130%;
+    height: 20vh;
+  }
+
+  hr#hrrdp {
+    margin-left: 53.3%;
+    margin-top: -124%;
+    height: 90px;
+  }
+  p#plogo {
+    margin-left: 59%;
+    margin-top: -121%;
+  }
+
+  h1#h1logo {
+    margin-left: 59%;
+    margin-top: -116.5%;
+    font-size: 1.4rem;
+  }
+
+  h2#h2logo {
+    margin-left: 59.2%;
+    margin-top: -115%;
+    font-size: 1rem;
+  }
+
+  h1#h1icns {
+    padding: 0;
+    margin-left: 23%;
+    margin-top: -50vh;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  h2#h2icns {
+    padding: 0;
+    margin-left: 5%;
+    margin-top: -44vh;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  img#icntelef {
+    margin-left: 40%;
+    margin-top: -17vh;
+    height: 10vh;
+  }
+
+  h1#h1telef {
+    margin-left: 41vw;
+    margin-top: -5vh;
+    font-size: 1.1rem;
+  }
+
+  h2#h2telef {
+    margin-left: 30vw;
+    margin-top: -1vh;
+    font-size: 0.9rem;
+  }
+
+  img#icnwpp {
+    margin-left: 40%;
+    margin-top: 8vh;
+    height: 10vh;
+  }
+
+  h1#h1wpp {
+    margin-left: 38vw;
+    margin-top: 22vh;
+    font-size: 1.1rem;
+  }
+
+  h2#h2wpp {
+    margin-left: 30vw;
+    margin-top: 26vh;
+    font-size: 0.9rem;
+  }
+
+  img#icnemail {
+    margin-left: 40%;
+    margin-top: 34vh;
+    height: 10vh;
+  }
+
+  h1#h1email {
+    margin-left: 41.3vw;
+    margin-top: 46vh;
+    font-size: 1.1rem;
+  }
+
+  h2#h2email {
+    margin-left: 26vw;
+    margin-top: 50vh;
+    font-size: 0.9rem;
+  }
+
+  img#icninsta {
+    height: 8vh;
+    margin-top: -32vh;
+    margin-left: 23%;
+  }
+
+  img#icnfb {
+    height: 8vh;
+    margin-top: -32vh;
+    margin-left: 43%;
+  }
+
+  img#icnyt {
+    height: 8vh;
+    margin-top: -32vh;
+    margin-left: 63%;
+  }
+
+  p#plink {
+    display: none;
+  }
+
+  a#plki {
+    display: none;
+  }
+
+  a#plkh {
+    display: none;
+  }
+
+  a#plkc {
+    display: none;
+  }
+
+  h1#h1pfin {
+    margin-left: 15vw;
+    margin-top: 60vh;
+    font-size: 0.8rem;
+  }
+
+  h2#h2pfin {
+    margin-left: 32.5vw;
+    margin-top: 60vh;
+    font-size: 0.8rem;
+  }
+
+  div#pdireitos {
+    margin-left: 19vw;
+    margin-top: 63vh;
+    font-size: 0.6rem;
+  }
+/*=========================== RODAPE ====================*/
+
 }
 /*=============================================================  MIDIA QUARY  ======================*/
 
