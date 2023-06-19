@@ -16,22 +16,22 @@ body {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-	font-size: 14px;
-	font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-family: "Montserrat", Sans-serif;
     font-weight: 00;
     text-transform: uppercase;
-	margin: 0 auto;
-	padding: 0 20px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .navbar{
     /* padding-top: 8vh; */
     list-style: none;
     position: absolute;
-    top: 12.5vh;
-    left: 0vw;
-    height: 67vh;
-    width: 17vw;
+    top: 80px;
+    left: 0;
+    height: 500px;
+    width: 270px;
     background-color: white;
     transition: 200ms;
     cursor: pointer;
@@ -41,10 +41,25 @@ body {
     left: -200vw;
     transition: 200ms;
     
-}
-@keyframes alternarImagem {
+  }
+  
+  .btn-menu{
+      margin-right: 8vw;
+      background-color: transparent;
+      color: white;
+      border: solid 1px transparent;
+      margin-left: 2%;
+      align-items: center;
+      cursor: pointer;
+    
+  }
+  .btn-menu:hover{
+      color: rgb(95, 189, 95);
+      
+  }
+/* @keyframes alternarImagem {
     0% {
-      background-image: url("assets/img/Composição_site/img_ceu.jpg");
+      background-image: url("assets/img/Composição_site/teste_gif/gif_completa.gif");
     }
     25% {
       background-image: url("assets/img/Composição_site/ias.jpg");
@@ -58,15 +73,15 @@ body {
     100% {
       background-image: url("assets/img/Composição_site/img_ceu.jpg");
     }
-  }
+  } */
   
   header {
-
+    background-image: url("assets/img/Composição_site/teste_gif/gif.gif");
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 110vh;
+    height: 95vh;
     color: #fff;
     padding: 1% 0;
     margin: 0;
@@ -74,22 +89,10 @@ body {
   }
 
 .logo {
-	margin-left: -60%;
+  position: relative;
+	margin-left: -33vw;
 }
 
-.btn-menu{
-    margin-right: 8vw;
-    background-color: transparent;
-    color: white;
-    border: solid 1px transparent;
-	margin-left: 2%;
-	align-items: center;
-    cursor: pointer;
-	
-}
-.btn-menu:hover{
-    color: rgb(95, 189, 95);
-}
 
 ul.lista {
     display: block;
@@ -295,11 +298,11 @@ p {
   #camiseta222 img {
     max-width: 100%;
     border: none;
-    border-radius: 20px;
+    border-radius: 3%;
   }
   
   #camiseta222 img:hover {
-    filter: brightness(80%); /*altera brilho */
+    filter: brightness(95%); /*altera brilho */
   }
   
   #camiseta222 h2 {
@@ -447,35 +450,42 @@ h2#h2email{
 }
 
 img#icninsta{
-    position: absolute;
-    height: 7.2vh;
-    margin-top: -6vh;
-    margin-left: 70vw;
+  position: absolute;
+  height: 7.2vh;
+  margin-top: -6vh;
+  margin-left: 70vw;
+  transition: transform 0.5s ease;
 }
 img#icninsta:hover{
-    opacity: 85%;
-    cursor: pointer;
+  opacity: 85%;
+  cursor: pointer;
+  transform: translateY(-13px);
 }
 img#icnfb{
-    position: absolute;
-    height: 7.2vh;
-    margin-top: -6vh;
-    margin-left: 74vw;
+  position: absolute;
+  height: 7.2vh;
+  margin-top: -6vh;
+  margin-left: 74vw;
+  transition: transform 0.5s ease;
 }
 img#icnfb:hover{
-    opacity: 85%;
-    cursor: pointer;
+  opacity: 85%;
+  cursor: pointer;
+  transform: translateY(-13px);
 }
 img#icnyt{
-    position: absolute;
-    height: 7.2vh;
-    margin-top: -6vh;
-    margin-left: 78vw;
+  position: absolute;
+  height: 7.2vh;
+  margin-top: -6vh;
+  margin-left: 78vw;
+  transition: transform 0.5s ease;
 }
 img#icnyt:hover{
-    opacity: 85%;
-    cursor: pointer;
+  opacity: 85%;
+  cursor: pointer;
+  transform: translateY(-13px);
 }
+
 h1#h1icns{
     position: absolute;
     margin-left: 70.5vw;
@@ -595,7 +605,7 @@ header {
     .navbar_ativo {
         display: block;
         left: 0;
-        height: 70%;
+        height: 75%;
         width: auto;
         background-color: rgb(255, 255, 255);
     }

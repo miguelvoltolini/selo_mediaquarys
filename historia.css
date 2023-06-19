@@ -68,39 +68,45 @@ hr#hrnav{
     display: flex;
     border: none;
     margin-top: 2vh;
-    justify-content: center;
+    display: flex;
+    margin-left: 2.7%;
 }
+
 h1#h1nav{
     color: white;
     margin-top: 6vh;
     font-family: "Montserrat", Sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
+    text-align: center;
 }
 h1#h1histcplt{
     font-family: "Montserrat", sans-serif ;
     position: absolute;
-    margin-top: -52vh;
-    margin-left: 50vw;
+    margin-top: -70vh;
+    margin-left: 51.5vw;
     
 }
 p#phistcplt{
     font-family: "Montserrat", sans-serif ;
     position: absolute;
-    margin-top: -44.1vh;
-    margin-left: 50vw;
+    margin-top: -58vh;
+    margin-left: 51.5vw;
 }
+
+img#imghis{
+    width: 36vw;
+    margin-top: 9vh;
+    margin-left: 13vw;
+    border-radius: 2%;
+}
+
 
 .logo {
 	margin-left: 13.5%;
     
 }
 
-img#imghis{
-    width: 36%;
-    margin-top: 15vh;
-    margin-left: 13vw;
-}
 .btn-menu{
     margin-right: 8vw;
     background-color: transparent;
@@ -169,6 +175,7 @@ sup:hover{
     background-position: center center;
     background-size: cover;
     height: 60vh;
+    margin-top: -10vh;
  }
  h1#elevate{
     color: beige;
@@ -217,7 +224,7 @@ sup:hover{
  }
  button#btn_his{
     margin-left: 108px;
-    margin-top: 28px;
+    margin-top: 43px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif ;
     font-size: 18px;
@@ -229,7 +236,8 @@ sup:hover{
     transition: transform 0.5s ease;
  }
  button#btn_his:hover{
-    transform: translateX(15px);
+    transform: translateY(-15px);
+    
 
  }
  /* --------------------------------------SLIDES HISTORIA----------------- */
@@ -400,30 +408,36 @@ img#icninsta{
     height: 7.2vh;
     margin-top: -6vh;
     margin-left: 70vw;
+    transition: transform 0.5s ease;
 }
 img#icninsta:hover{
     opacity: 85%;
     cursor: pointer;
+    transform: translateY(-13px);
 }
 img#icnfb{
     position: absolute;
     height: 7.2vh;
     margin-top: -6vh;
     margin-left: 74vw;
+    transition: transform 0.5s ease;
 }
 img#icnfb:hover{
     opacity: 85%;
     cursor: pointer;
+    transform: translateY(-13px);
 }
 img#icnyt{
     position: absolute;
     height: 7.2vh;
     margin-top: -6vh;
     margin-left: 78vw;
+    transition: transform 0.5s ease;
 }
 img#icnyt:hover{
     opacity: 85%;
     cursor: pointer;
+    transform: translateY(-13px);
 }
 h1#h1icns{
     position: absolute;
@@ -513,7 +527,7 @@ div#pdireitos{
     color: #696969;
 }
 #adir{
-color: black;
+    color: black;
 }
 #flaticon{
     color: black;
